@@ -1,6 +1,6 @@
 # Tribute-Page
 
-A project made for the "Responsive Web Design Certification" offered by freecodecamp.org.
+A HTL, CSS and JavaScript project made for the "Responsive Web Design Certification" offered by freecodecamp.org.
 
 My first website ever, recently updated with some new styling and some newly learned JavaScript to implement a nice carousel on the page.
 
