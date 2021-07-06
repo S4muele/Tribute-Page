@@ -1,9 +1,9 @@
 body {
   background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2252&q=80") round;
+  object-fit: cover;
   color: #fff;
   margin: 0;
   font-family: monospace, sans-serif, serif;
-  font-size: 17px;
   text-align: center;
 }
 
@@ -14,16 +14,29 @@ h2 {
 }
 
 h1 {
-  font-size: 55px;
-}
-
-p {
-  margin: 0 auto;
+  font-size: 3rem;
+  color: coral;
 }
 
 .sub-title {
+  color: #639fd1;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #96c8ff;
+  color: coral;
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+#img-div {
+  width: 90%;
 }
 
 #img-caption {
@@ -32,28 +45,33 @@ p {
   right: 0;
   margin: 0;
   padding: 2px 5px;
-  font-size: 15px;
+  font-size: 1rem;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+ul {
+  padding-left: 0;
 }
 
 ul .bold-text {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #tribute-info li {
+  font-size: 1rem;
   list-style: none;
-  padding: 10px 0 10px 15px;
+  padding: 10px 0 10px;
 }
 
 /* STYLES */
 #main {
   max-width: 750px;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 10px 10px black;
-  padding: 0 0 50px;
+  width: 85%;
+  margin: 1rem auto;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .timeline {
@@ -72,44 +90,40 @@ header {
 
 #image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 2px;
   transition: box-shadow 0.3s ease-out;
 }
 
-.box-shadow,
-#image:hover,
-#image:focus {
-  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.8);
-}
-
 #tribute-info {
-  padding: 15px 0;
+  border-top: 2px solid #639fd1;
+  border-bottom: 2px solid #639fd1;
+  width: 90%;
+  padding: 1em 0;
+  margin: 0 auto;
 }
 
 #tribute-link {
-  margin-top: 20px;
-  padding: 11px 24px;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin: 1em 0 0;
+  padding: 0.25em 0.75em;
+  font-size: 1rem;
+  color: coral;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid coral;
   border-radius: 5px;
-  border: 1px solid white;
   display: inline-block;
   text-decoration: none;
-  transition: transform, color, font-weight, background-color, border 0.2s ease-out;
+  transition: transform, color 0.1s ease-out, font-weight, background-color, border 0.2s ease-out;
 }
 
 #tribute-link:hover,
 #tribute-link:focus {
-  transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  font-weight: bold;
-  border: 2px solid #010101;
-  box-shadow: 0 0 20px 2px white;
+  transform: scale(1.05);
+  color: white;
+  background-color: black;
+  border: 2px solid white;
 }
 
 /* CAROUSEL */
@@ -131,21 +145,20 @@ header {
 .action-btn {
   position: absolute;
   padding: 8px 14px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 2px solid white;
   font-size: 25px;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform, color, background-color, border 0.5s ease-out;
+  transition: transform, color 0.1s ease-out, font-weight, background-color, border 0.2s ease-out;
 }
 
 .action-btn:hover,
 .action-btn:focus {
-  transform: scale(1.2);
-  color: white;
-  background-color: black;
-  border: 2px solid white;
+  color: coral;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid coral;
 }
 
 #carousel-button-prev {
@@ -165,5 +178,62 @@ header {
   }
   100% {
     opacity: 1;
+  }
+}
+.author-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-info p {
+  padding: 1em 1.5em;
+}
+
+.author-info a {
+  text-decoration: none;
+  color: red;
+}
+
+.author-info a:hover,
+.author-info a:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 330px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  #img-caption {
+    font-size: 0.5rem;
+  }
+
+  ul .bold-text {
+    font-size: 1rem;
+  }
+
+  #tribute-info li {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 331px) and (max-width: 450px) {
+  p {
+    font-size: 0.9rem;
+  }
+
+  #img-caption {
+    font-size: 0.75rem;
   }
 }
