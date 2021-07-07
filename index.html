@@ -2,19 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Hubble Tribute Page</title>
-  
-  <meta property="og:title" content="Hubble Tribute Page" />
-  <meta property="og:description" content="A responsive Tribute Page made for freecodecamp.org" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="main_thumb.png" />
-  <meta property="og:url" content="https://s4muele.github.io/Tribute-Page/" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./style.css">
+  <title>CodePen - Build a Tribute Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <div id="main">
 
@@ -24,27 +18,31 @@
   </header>
   
   <div id="img-div" class="carousel">
+    
     <div class="carousel-item carousel-item-visible">
-      <img id="image"  src="images/carousel-img-1.jpeg" alt="Edwin Hubble with the 48 inches Schmidt Telescope, Palomar Observatory, 1949">
+      <img id="image"  src="https://raw.githubusercontent.com/S4muele/Tribute-Page/main/images/carousel-img-1.jpeg" alt="Edwin Hubble with the 48 inches Schmidt Telescope, Palomar Observatory, 1949">
       <div id="img-caption">
         <p>Edwin Hubble with the 48" Schmidt Telescope, Palomar Observatory, 1949.</p>   
       </div>
     </div>
+    
     <div class="carousel-item">
-      <img id="image"  src="images/carousel-img-2.jpeg" alt="Edwin Hubble poses inside the 200-inch Palomar telescope a few years before his death in 1953">
+      <img id="image"  src="https://raw.githubusercontent.com/S4muele/Tribute-Page/main/images/carousel-img-2.jpeg" alt="Edwin Hubble poses inside the 200-inch Palomar telescope a few years before his death in 1953">
       <div id="img-caption">
         <p>Edwin Hubble poses inside the 200-inch Palomar telescope a few years before his death in 1953.</p>   
       </div>
     </div>
+    
     <div class="carousel-item">
-      <img id="image" src="images/carousel-img-3.jpeg" alt="The modern Hale telescope at Palomar Observatory, California">
+      <img id="image" src="https://raw.githubusercontent.com/S4muele/Tribute-Page/main/images/carousel-img-3.jpeg" alt="The modern Hale telescope at Palomar Observatory, California">
       <div id="img-caption">
         <p>The modern Hale telescope at Palomar Observatory, California.</p>   
       </div>
     </div>
+    
     <div class="carousel-actions">
-      <button id="carousel-button-prev" class="action-btn" aria-label="Previous picture">&lt;</button>
-      <button id="carousel-button-next" class="action-btn" aria-label="Next picture">&gt;</button>
+      <button id="carousel-button-prev" class="action-btn" aria-label="Previous picture"><span class="carousel-btn-prev">&lt;</span></button>
+      <button id="carousel-button-next" class="action-btn" aria-label="Next picture"><span class="carousel-btn-next">&gt;</span></button>
     </div>
   </div>
 
@@ -63,11 +61,11 @@
     <p><a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Edwin_Hubble#Early_life_and_education">Read more ></a></p>
   </div> <!--End of #tribute-info-->
   <div class="author-info">
-      <p>Made by <a href="https://github.com/S4muele">S4muele</a></p>
-    <p>Special thanks to <a href="https://freecodecamp.org">freecodecamp.org</a></p>
+      <p>Made by <a class="credits" href="https://github.com/S4muele" target="_blank">S4muele</a></p>
+    <p>Special thanks to <a class="thanks" target="_blank" href="https://www.freecodecamp.org/">freecodecamp.org</a></p>
     </div>
 </div> <!--End of #main-->
-
+<!-- partial -->
   <script  src="./script.js"></script>
 
 </body>

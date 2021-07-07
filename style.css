@@ -1,7 +1,7 @@
 body {
   background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2252&q=80") round;
   object-fit: cover;
-  color: #fff;
+  color: #FEFEFE;
   margin: 0;
   font-family: monospace, sans-serif, serif;
   text-align: center;
@@ -20,7 +20,6 @@ h1 {
 
 .sub-title {
   color: #639fd1;
-  font-style: italic;
   font-size: 1.5rem;
 }
 
@@ -70,8 +69,8 @@ ul .bold-text {
   max-width: 750px;
   width: 85%;
   margin: 1rem auto;
+  border: 2px solid #82a176;
   border-radius: 5px;
-  border: 2px solid rgba(130, 161, 118, 1);
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -91,7 +90,7 @@ header {
 
 #image {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 2px;
   transition: box-shadow 0.3s ease-out;
@@ -144,32 +143,30 @@ header {
 }
 
 .action-btn {
+  font-size: 3rem;
+  padding: 0.5em;
   position: absolute;
-  padding: 8px 14px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  border: 2px solid white;
-  font-size: 25px;
-  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
-  transition: transform, color 0.1s ease-out, font-weight, background-color, border 0.2s ease-out;
+  transition: transform, color 0.1s ease-out;
 }
 
 .action-btn:hover,
 .action-btn:focus {
   color: coral;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid coral;
 }
 
 #carousel-button-prev {
-  top: 43%;
-  left: 2%;
+  top: 50%;
+  left: 0%;
 }
 
 #carousel-button-next {
-  top: 43%;
-  right: 2%;
+  top: 50%;
+  right: 0%;
 }
 
 /* ANIMATIONS */
@@ -184,6 +181,7 @@ header {
 .author-info {
   display: flex;
   justify-content: space-between;
+  font-size: 0.75rem;
 }
 
 .author-info p {
@@ -192,7 +190,16 @@ header {
 
 .author-info a {
   text-decoration: none;
-  color: rgba(130, 161, 118, 1);
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.credits {
+  color: #66FF66;
+}
+
+.thanks {
+  color: #FD0E35;
 }
 
 .author-info a:hover,
